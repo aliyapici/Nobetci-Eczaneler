@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "NobetciEczaneler",
-    "slug": "NobetciEczaneler",
+    "name": "Nöbetçi Eczaneler",
+    "slug": "nobetci-eczaneler",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,16 +13,31 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "dev.aliyapici.NobetciEczaneler",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Yakındaki nöbetçi eczaneleri görmek için konumunuza erişim sağlanması gerekiyor.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "package": "dev.aliyapici.NobetciEczaneler"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2e1d2680-3656-4e41-9266-4782c8caf038"
+      }
     }
   }
 }
